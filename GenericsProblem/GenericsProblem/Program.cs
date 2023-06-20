@@ -8,10 +8,10 @@ namespace GenericsProblem
 {
     internal class Program
     {
-        static void Main(string[] args) 
-        {
+        static void Main(string[] args)
+        {/*
           //  DeleteArray deleteArray = new DeleteArray();
-            int[] arr = { 10, 20, 30, 5, 45, 6, 250 };
+            int [] arr = { 10, 20, 30, 5, 45, 6, 250 };
             int n = arr.Length;
             DeleteArray.DeleteElement(arr, n, 45);
             Console.WriteLine("Array after delete elements");
@@ -19,6 +19,13 @@ namespace GenericsProblem
             {
                 Console.WriteLine(arr[i] + " ");
             }
+*/
+            //using generic method
+            object[] arr1 = { 10, 20, "A", 30, 80, 65 };
+           DeleteArray deleteArray = new DeleteArray();
+            deleteArray.DeleteMethod(ref arr1, 30);
+            
+            
         }
          
     }
