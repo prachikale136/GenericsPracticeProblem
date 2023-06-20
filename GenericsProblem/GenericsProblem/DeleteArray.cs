@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GenericsProblem
 {
-    internal class DeleteArray
+    public class DeleteArray<T>
     {
-        public static void DeleteElement(int []arr ,int n, int x)  // here x is element in array
+        /*public static void DeleteElement(int []arr ,int n, int x)  // here x is element in array
         {
             int i;
             for (i = 0;i<n;i++) 
@@ -28,9 +28,9 @@ namespace GenericsProblem
                 //return n;
             }
             
-        }
+        }*/
 
-        public void DeleteMethod<T>(ref T[] arr1, T x)
+        public void DeleteMethod( T[] arr1, T x)
         {
             int i;
             int count = 0;
@@ -45,7 +45,7 @@ namespace GenericsProblem
                     arr1[i -count] = arr1[i];
                  }
             }
-            Array.Resize(ref arr1, arr1.Length - count);
+            Array.Resize( ref arr1, arr1.Length - count);
             Console.WriteLine("After deleting elemnt");
             foreach (T obj in arr1)
             {

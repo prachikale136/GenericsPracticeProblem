@@ -21,9 +21,9 @@ namespace GenericsProblem
             }
 */
             //using generic method
-            object[] arr1 = { 10, 20, "A", 30, 80, 65 };
-           DeleteArray deleteArray = new DeleteArray();
-            deleteArray.DeleteMethod(ref arr1, 30);
+            int[] arr1 = { 10, 20, 30, 80, 65 };
+           DeleteArray<int> deleteArray = new DeleteArray<int>();
+            deleteArray.DeleteMethod(arr1, 30);
             
             
         }
